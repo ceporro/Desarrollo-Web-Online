@@ -10,6 +10,7 @@ body{
     font-family: 'Source Sans Pro' sans-serif;
     background: #FFF;
     color: red;
+    margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -23,6 +24,7 @@ h1{
     line-height: 1.5;
     letter-spacing: -.2px;
     color: #FFF;
+    margin: 100px 150px 50px 50px;
     /*text-transform: uppercase;
     text-decoration: overline;*/
 }
@@ -51,9 +53,18 @@ h1 strong{
     background-position-x: right ;
 }
 
+.portfolio{
+    background: #FAFAFA;
+    margin: 20px;
+}
+
 .project{
     border: 1px solid grey;
     border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 15px ;
+    padding: 20px;
+    background: #FFF;
     /*border-width: 5px;
     border-color: red;
     border-style: solid;
@@ -70,6 +81,27 @@ h1 strong{
 .project_imageContainer{
     width: 500px;
 }
+
+
+.flexbox{
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.box{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid red; 
+    flex-shrink: 0;
+    /* align-self: flex-start; */
+}
+
+
 
 /*selector de etiqueta header - section - article -nav */
 /*selector descendente body header div nav ol li a*/

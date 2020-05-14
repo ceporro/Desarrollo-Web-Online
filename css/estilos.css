@@ -9,7 +9,7 @@ valores
 body{
     font-family: 'Source Sans Pro' sans-serif;
     background: #FFF;
-    color: red;
+    color: #000;
     margin: 0;
 }
 
@@ -24,7 +24,8 @@ h1{
     line-height: 1.5;
     letter-spacing: -.2px;
     color: #FFF;
-    margin: 100px 150px 50px 50px;
+    margin: 0;
+    /* margin: 100px 150px 50px 50px; */
     /*text-transform: uppercase;
     text-decoration: overline;*/
 }
@@ -33,15 +34,55 @@ h1 strong{
     color: #026fff
 }
 
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro' sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+ol,ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
 .header{
     background:#FFF;
     background-color: #1D252C;
     color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
 }
 
 .header a{
     color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 .hero {
@@ -51,17 +92,19 @@ h1 strong{
     background-size: 500px;
     background-repeat: no-repeat;
     background-position-x: right ;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio{
     background: #FAFAFA;
-    margin: 20px;
+    padding: 20px;
 }
 
 .project{
     border: 1px solid grey;
     border-radius: 5px;
-    margin: 10px;
+    /* margin: 10px; */
     margin-bottom: 15px ;
     padding: 20px;
     background: #FFF;
@@ -72,6 +115,27 @@ h1 strong{
     border-bottom: 5px solid green;
     border-left: 5px solid blue;
     border-right: 5px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project_title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project_course, .project_url, .project_date{
+    margin: 10px 0;
+}
+
+.project_description{
+    font-size: 20px;
 }
 
 .project div{
@@ -101,7 +165,66 @@ h1 strong{
     /* align-self: flex-start; */
 }
 
+.footer{
+    background: #1b2127;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.Exp_title{
+    margin-left: 20px;
+}
+
+.event{
+    background: #f4fbff;
+    /* border: 1px solid red; */
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.event_list{
+    display: flex;
+}
+
+.event_detail{
+    margin: 20px 40px;
+    margin-top: -40px ;
+    background-color: #FFF;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event_description{
+    text-align: left;
+}
+
+.event_url{
+    color: #056fff;
+    border: 1px solid #056fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: #FFF;
+}
 
 /*selector de etiqueta header - section - article -nav */
 /*selector descendente body header div nav ol li a*/
